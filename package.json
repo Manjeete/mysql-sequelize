@@ -1,0 +1,28 @@
+{
+  "name": "mysql-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon app.js",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manjeete/mysql-sequelize.git"
+  },
+  "author": "Manjeet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manjeete/mysql-sequelize/issues"
+  },
+  "homepage": "https://github.com/Manjeete/mysql-sequelize#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.13.0",
+    "sequelize-cli": "^6.3.0"
+  }
+}
