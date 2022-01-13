@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon app.js",
-    "start":"node app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Manjeete/mysql-sequelize#readme",
   "dependencies": {
     "body-parser": "^1.19.1",
+    "dotenv": "^11.0.0",
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
