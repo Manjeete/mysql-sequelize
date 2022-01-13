@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize')
+const {Sequelize,DataTypes} = require('sequelize')
 const dbConfig = require("../config/dbConfig");
 
 const sequelize = new Sequelize(
@@ -22,4 +22,18 @@ sequelize.authenticate()
 })
 .catch(err =>{
     console.log("Error:"+err)
+})
+
+const db = {}
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+
+db.users = require("./users")(sequelize,DataTypes)
+
+db.sequelize.sync()
+.then(() =>{
+    console.log("Yes re-sync done!")
+})
+.catch(err =>{
+    console.log("ERROR: "+err)
 })
